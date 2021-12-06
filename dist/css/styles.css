@@ -11408,11 +11408,12 @@ p {
   }
 }
 header.masthead {
-  padding-top: 10.5rem;
+  padding-top: 4rem;
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
-  background-image: url("../assets/Banner\ copy.jpg");
+  /* background-image: url("../assets/Banner\ copy.jpg"); */
+  background-color: #09090b;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11435,7 +11436,7 @@ header.masthead .masthead-heading {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 17rem;
+    padding-top: 8rem;
     padding-bottom: 12.5rem;
   }
   header.masthead .masthead-subheading {
