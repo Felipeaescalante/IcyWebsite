@@ -11554,6 +11554,8 @@ header.masthead .masthead-heading {
 .timeline > li {
   position: relative;
   min-height: 50px;
+  margin-bottom: 50px;
+
 }
 .timeline > li:after, .timeline > li:before {
   display: table;
