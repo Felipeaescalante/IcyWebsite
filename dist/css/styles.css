@@ -82,7 +82,7 @@ body {
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
+  color: #dfdfdf;
   text-align: var(--bs-body-text-align);
   background-color: #09090b;
   -webkit-text-size-adjust: 100%;
@@ -11554,7 +11554,6 @@ header.masthead .masthead-heading {
 .timeline > li {
   position: relative;
   min-height: 50px;
-  margin-bottom: 50px;
 }
 .timeline > li:after, .timeline > li:before {
   display: table;
@@ -11593,7 +11592,6 @@ header.masthead .masthead-heading {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #ffc800;
 }
 .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
   font-size: 10px;
@@ -11638,7 +11636,7 @@ header.masthead .masthead-heading {
   }
   .timeline > li {
     min-height: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
   .timeline > li .timeline-panel {
     float: left;
