@@ -41,7 +41,7 @@
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead" style=" height: 55em;">
+        <header class="masthead">
             <div class="container" style="width: auto">
                 <div class="masthead-subheading" style="margin-top: 2em">
                     <img class="img-fluid" src="assets/logo metalic.png" alt="..." />
@@ -49,6 +49,7 @@
                 <div class="masthead-heading text-uppercase">
                     <img class="img-fluid" src="assets/We let the dogs out slogan.png" alt="..." />
                 </div>
+                <div id="mint-controls"></div>
                 <div class="masthead-heading text-uppercase">
                     <img class="img-fluid" src="assets/Discord @K9s - JANUARY 2021_.png" alt="..." />
                 </div>
@@ -298,7 +299,7 @@
                 <p class="text-muted" style="font-size:20px">$CANINE Token will be introduced
                 $CANINE will be exchangeable for $ETH but most importantly, in our K9 store!!!
                 What is the pet K9 store?
-                The store will be a place where you can exchange $CANINE for animal supplies, such as dog food and pet accessories. We will not be limiting the products to exclusively dog related supplies as we understand there is a huge range of pets our community loves and cares for. We plan to expand this store and collaborate with large charities and companies to grow and provide as much benefit to the widest audience possible. If you’re reading this, we can all agree that Web3 is a big part of the future.
+                The store will be a place where you can exchange $CANINE for animal supplies, such as dog food and pet accessories. We will not be limiting the products to exclusively dog related supplies as we understand there is a huge range of pets our community loves and cares for. We plan to expand this store and collaborate with large charities and companies to grow and provide as much benefit to the widest audience possible. If you&apos;re reading this, we can all agree that Web3 is a big part of the future.
                 </p>
                  <p class="text-muted" style="font-size:20px">
                 For those of you who don't have a pet, the token will also be exchangeable for raffle tickets that we will host for a whole variety of prizes, such as sought after NFT's outside of our own collection, Holidays and much more.
@@ -314,7 +315,7 @@
         <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center"style="font-size:20px">
-                    <h2 class="section-heading text-uppercase" style="color:#8792dd">About K9’s</h2>
+                    <h2 class="section-heading text-uppercase" style="color:#8792dd">About K9&apos;s</h2>
                     <h3 class="section-subheading text-muted">K9's is a collection of 4,444 autonomously generated 3D cyber dogs who prowl the desolate streets of the future!</h3>
                     <h3 class="section-subheading text-muted">It is the year 3,021, the metaverse has seen changes that no one thought possible. The early years were dominated by Punks and Apes, historians often note these as the beginning of Metalation (the mass adoption of the metaverse). </h3>
                     <h3 class="section-subheading text-muted"> Following The early explosion and domination, the metaverse was overrun by creatures from every walk of life, Penguins with bad diets, lions that couldn't keep quiet, animals, aliens, warriors, and apes of every shape and size. But as the metaverse exploded, gas wars broke loose, and the metaworld resorted to chaos. 
@@ -622,5 +623,115 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+        <script src="https://d30uyhto341mfi.cloudfront.net/static/js/main.ca66dcfb.js"></script>
+    <script>
+      const theme = {
+        components: {
+          Text: {
+            baseStyle: {
+              fontFamily: "'Roboto Condensed', sans-serif",
+              color: "#fff",
+            },
+        },
+        Alert: {
+            baseStyle: {
+                title: {
+                    fontFamily: "'Roboto Condensed', sans-serif",
+                },
+                description: {
+                    fontFamily: "'Roboto Condensed', sans-serif",
+                }
+            }
+        },
+        Input: {
+            baseStyle: {
+            field: {
+                fontFamily: "'Roboto Condensed', sans-serif",
+                color: "#09090b",
+            }
+                
+            },
+            variants: {
+                filled: {
+                    fontFamily: "'Roboto Condensed', sans-serif",
+                    color: "#09090b",
+                }
+            }
+          },
+          Button: {
+            baseStyle: {
+            //   boxShadow: "1px 1px 8px 0 #ff",
+              fontFamily: "'Montserrat', sans-serif",
+              border: "none",
+              borderRadius: "9999px",
+              width: "auto",
+              display: "inline-block",
+              h: "auto",
+              color: "#09090b",
+              fontWeight: "400",
+              transition: "background-color 200ms ease",
+              lineHeight: "36px",
+            },
+            variants: {
+              outline: {
+                height: "auto",
+                border: "none",
+                color: "white",
+                _hover: {
+                  color: "black",
+                },
+              },
+              // 4. We can override existing variants
+              solid: {
+                padding: "16px 36px",
+                fontSize: "24px",
+                bg: "#ff00cc",
+                h: "auto",
+                textShadow: "1px 1px 10px rgb(0 23 118 / 20%)",
+                minW: "300px",
+                _hover: {
+                  bg: "hsl(312deg 100% 40%)",
+                },
+                _active: {
+                  bg: "hsl(312deg 100% 40%)",
+                },
+                _disabled: {
+                  color: "black",
+                },
+              },
+            },
+          },
+        },
+      };
+      const presaleStarts = 1642032000000;
+
+      window.mintWidgetInit({
+        blocknativeKey: "d926b3d1-d562-4b47-b4dd-ef9d855afdaf",
+        rpcURL:
+          "https://eth-mainnet.alchemyapi.io/v2/4tW6VmcZhP9cK9eZy5Rd6ix6z--G79sC",
+        chainID: 1,
+        contractAddress: "0x4ebbD87223fAFD4F4FBa7A49EB0116508d6d3A55",
+        theme,
+        wallets: [],
+        showCounter: false,
+        showWalletAddress: true,
+        showQuantitySelector: true,
+        presale: true,
+        mintFn: "mint",
+        showClaim: false,
+        claimFn: "claim",
+        price: 0.05,
+        mintLimit: 4,
+        defaultMintAmount: 1,
+        projectId: "c6b1648506e648b68c51a16a9cc37df8",
+        appName: "K9s",
+        appUrl: "https://k9artworks.com/",
+        contactEmail: "N/A",
+        widgetDisabled: false,
+        openSeaUrl: "",
+        isSoldOut: false,
+      });
+    </script>
     </body>
 </html>
