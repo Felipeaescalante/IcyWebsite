@@ -704,7 +704,9 @@
           },
         },
       };
-      const presaleStarts = 1642032000000;
+      const presaleStarts = 1643659200000;
+      const publicStarts = 1643745600000;
+      const currentTime = Date.now();
 
       window.mintWidgetInit({
         blocknativeKey: "d926b3d1-d562-4b47-b4dd-ef9d855afdaf",
@@ -717,18 +719,18 @@
         showCounter: false,
         showWalletAddress: true,
         showQuantitySelector: true,
-        presale: true,
+        presale: currentTime < publicStarts,
         mintFn: "mint",
         showClaim: false,
         claimFn: "claim",
-        price: 0.05,
-        mintLimit: 4,
+        price: currentTime < publicStarts ? 0.05 : 0.06,
+        mintLimit: currentTime < publicStarts ? 4 : 8,
         defaultMintAmount: 1,
         projectId: "c6b1648506e648b68c51a16a9cc37df8",
         appName: "K9s",
         appUrl: "https://k9artworks.com/",
         contactEmail: "N/A",
-        widgetDisabled: false,
+        widgetDisabled: currentTime < presaleStarts,
         openSeaUrl: "",
         isSoldOut: false,
       });
